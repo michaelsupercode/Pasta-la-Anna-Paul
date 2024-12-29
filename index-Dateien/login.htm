@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de-de" class=" svbhd idc0_350"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="csrf_token" value="sDIs105c8aKTZNQROTjghlIfSBgfI0bWRuf88zhk">
+
+    
+    <title> - Falstaff</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.falstaff.com/static/assets/favicons/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="https://www.falstaff.com/static/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" type="image/png" href="https://www.falstaff.com/static/assets/favicons/favicon-32x32.png" sizes="32x32">
+
+    <script src="login_data/api.js" async="" defer="defer"></script>
+</head>
+
+<body class=" ad-sitebar noads">
+
+<main id="main">
+        <div class="modal__header">
+        <div class="row">
+            <div class="col-8">
+                <a href="https://www.falstaff.com/de/auth/register" class="button button--link">Jetzt registrieren</a>
+            </div>
+            <div class="col-4">
+                <div class="modal__btn-close">
+                    <button type="button" id="login-modal-close-button" class="close-modal" aria-label="">
+                        <span class="icon icon-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal__body">
+        <div class="modal__logo">
+            <img loading="lazy" src="logo.svg" alt="Falstaff Logo" class="logo">
+        </div>
+        <div class="modal__title h5">
+            Herzlich Willkommen
+        </div>
+        <div class="modal__form">
+            <form method="POST" action="https://www.falstaff.com/de/auth/login" autocomplete="off">
+                <input type="hidden" name="_token" value="sDIs105c8aKTZNQROTjghlIfSBgfI0bWRuf88zhk" autocomplete="off">                <input type="hidden" name="iframe" value="true">
+                <div class="form-control-wrap ">
+                    <label for="email" class="form-label">E-Mail-Adresse</label>
+                    <input type="email" class="form-control" id="email" name="email" autocomplete="false" required="" aria-required="true">
+                                    </div>
+                <div class="form-control-wrap  ">
+                    <label for="password" class="form-label">Kennwort</label>
+                    <input type="password" id="password" name="password" class="form-control" autocomplete="false" required="" aria-required="true">
+                                        <a href="https://www.falstaff.com/de/auth/forgot-password" class="form-label-small">Kennwort vergessen?</a>
+                </div>
+                <div class="form-control-wrap">
+                    <div class="text-center">
+                        <button type="submit" class="button button--primary">Jetzt anmelden</button>
+                    </div>
+                </div>
+                <div class="form-control-wrap">
+                    <div class="text-center">
+                        <a href="https://www.falstaff.com/de/auth/login-phone" class="button button--link">Anmeldung via Telefon</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal__text">
+            <p>Falstaff ist ein Medium für kultivierte Genießer und 
+erwartet von seinen Community-Mitgliedern einen respektvollen Umgang. 
+Falstaff behält sich vor, Kommentare, welche straf- oder zivilrechtliche
+ Normen verletzen, den guten Sitten widersprechen oder grob unsachlich 
+sind, zu entfernen. Der User kann diesfalls keine Ansprüche stellen. 
+Strafrechtlich relevante Tatbestände werden zur Anzeige gebracht. 
+Weitere Informationen finden Sie auch in unserer <a href="https://www.falstaff.com/at/datenschutz-at" target="_blank">Datenschutzerklärung</a>.</p>
+        </div>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', () => {
+                let height = document.querySelector('#main').clientHeight;
+                const message = JSON.stringify({
+                    channel: 'login',
+                    message: 'updateHeight',
+                    height: height,
+                    date: Date.now(),
+                });
+                window.parent.postMessage(message, '*');
+            });
+        </script>
+    </div>
+</main>
+
+<link rel="preload" as="style" href="app-CKSnapc7.css"><link rel="stylesheet" href="app-CKSnapc7.css">
+<script>
+    window.addEventListener('load', function() {
+        let modalCloseButton = document.getElementById('login-modal-close-button')
+
+        if (!modalCloseButton) {
+            return;
+        }
+
+        modalCloseButton.addEventListener('click', function () {
+            const message = JSON.stringify({
+                channel: 'login',
+                message: 'modalClose',
+                date: Date.now(),
+            });
+            window.parent.postMessage(message, '*');
+        });
+    });
+</script>
+
+<script defer="defer" src="vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8f5e2154e9ddb3ad&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;87dbb76cd55c47289d0e0d24c3bb6572&quot;}" crossorigin="anonymous"></script>
+
+
+</body></html>
